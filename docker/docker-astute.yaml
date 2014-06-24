@@ -19,3 +19,23 @@ uid: master
 TEST_DNS: www.google.com
 FUEL_ACCESS:
   password: admin
+astute:
+  password: naily
+  user: naily
+cobbler:
+  password: cobbler
+  user: cobbler
+mcollective:
+  password: mcollective
+  user: mcollective
+postgres:
+  keystone_dbname: keystone
+  keystone_user: keystone
+  keystone_password: keystone
+  nailgun_dbname: nailgun
+  nailgun_user: nailgun
+  nailgun_password: nailgun
+  ostf_dbname: ostf
+  ostf_user: ostf
+  ostf_password: ostf
+>>>>>>> review/matthew_mosesohn/bp/secure-fuel-master-services
