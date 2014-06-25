@@ -39,13 +39,13 @@ BUILD_PACKAGES?=1
 NO_UI_OPTIMIZE:=0
 
 # Repos and versions
-FUELLIB_COMMIT?=master
-NAILGUN_COMMIT?=master
+FUELLIB_COMMIT?=authx
+NAILGUN_COMMIT?=authx
 ASTUTE_COMMIT?=master
 OSTF_COMMIT?=master
 
-FUELLIB_REPO?=https://github.com/stackforge/fuel-library.git
-NAILGUN_REPO?=https://github.com/stackforge/fuel-web.git
+FUELLIB_REPO?=https://github.com/loles/fuel-library.git
+NAILGUN_REPO?=https://github.com/loles/fuel-web.git
 ASTUTE_REPO?=https://github.com/stackforge/fuel-astute.git
 OSTF_REPO?=https://github.com/stackforge/fuel-ostf.git
 
