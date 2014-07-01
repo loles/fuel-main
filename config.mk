@@ -102,9 +102,9 @@ MIRROR_UBUNTU?=$(MIRROR_BASE)/ubuntu
 MIRROR_DOCKER?=$(MIRROR_BASE)/docker
 endif
 
-MIRROR_CENTOS?=http://mirrors.msk.mirantis.net/centos/$(CENTOS_RELEASE)
+MIRROR_CENTOS?=http://mirrors-local-msk.msk.mirantis.net/centos/$(CENTOS_RELEASE)
 MIRROR_CENTOS_OS_BASEURL:=$(MIRROR_CENTOS)/os/$(CENTOS_ARCH)
-MIRROR_UBUNTU?=http://mirror.yandex.ru/ubuntu/
+MIRROR_UBUNTU?=http://mirrors-local-msk.msk.mirantis.net/ubuntu/
 MIRROR_UBUNTU_OS_BASEURL:=$(MIRROR_UBUNTU)
 MIRROR_DOCKER?=http://fuel-repository.mirantis.com/fwm/$(PRODUCT_VERSION)/docker
 MIRROR_DOCKER_BASEURL:=$(MIRROR_DOCKER)
@@ -136,7 +136,12 @@ EXTRA_RPM_REPOS?=
 # EXTRA_DEB_REPOS="http://mrr.lcl raring main|http://mirror.yandex.ru/ubuntu precise main"'
 EXTRA_DEB_REPOS?=
 
-MIRANTIS?=no
+# Comma or space separated list. Available feature groups:
+#   experimental - allow experimental options
+#   mirantis - enable Mirantis logos and support page
+FEATURE_GROUPS?=experimental
+comma:=,
+FEATURE_GROUPS:=$(subst $(comma), ,$(FEATURE_GROUPS))
 
 # INTEGRATION TEST CONFIG
 NOFORWARD:=1
