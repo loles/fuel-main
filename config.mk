@@ -42,12 +42,12 @@ NO_UI_OPTIMIZE:=0
 FUELLIB_COMMIT?=authx
 NAILGUN_COMMIT?=authx
 ASTUTE_COMMIT?=master
-OSTF_COMMIT?=master
+OSTF_COMMIT?=authx
 
 FUELLIB_REPO?=https://github.com/loles/fuel-library.git
 NAILGUN_REPO?=https://github.com/loles/fuel-web.git
 ASTUTE_REPO?=https://github.com/stackforge/fuel-astute.git
-OSTF_REPO?=https://github.com/stackforge/fuel-ostf.git
+OSTF_REPO?=https://github.com/loles/fuel-ostf.git
 
 # Gerrit URLs and commits
 FUELLIB_GERRIT_URL?=https://review.openstack.org/stackforge/fuel-library
